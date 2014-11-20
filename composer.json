@@ -18,13 +18,9 @@
     ],
     "require": {
         "yiisoft/yii2": "*"
-    },
-"alias" : {
-
-					"@yii/helpSystem"         : "/yiisoft/yii2-helpSystem",
-					"@yii/helpSystem/admin"   :  "/yiisoft/yii2-helpSystem/modules/admin",
-					"@yii/helpSystem/client"  : "/yiisoft/yii2-helpSystem/modules/client",
-					"@yii/helpSystem/dmeditor" : "/yiisoft/yii2-helpSystem/vendor/dmeditor",
-			
-}
+    }, 
+ "autoload": {
+        "psr-4": {
+            "yii2-helpSystem\\": ""
+        }
 }
