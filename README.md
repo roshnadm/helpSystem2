@@ -17,10 +17,10 @@ Quickstart
 
 a. Using composer     
 	Run 
+	
 	php composer.phar require --prefer-dist yiisoft/help-system2 "*" 
 
 b. Manual Installation
-      
       Download yii2-helpsystem  in application yii root folder.
       Add the module details in extensions.php 
 ~~~php
@@ -73,9 +73,9 @@ b. Manual Installation
 
 3.Run mysql script:
 
-	a. /helpSystem/database/1_DDL/1_helpSystem_base_script.sql
+	a. /yii2-helpsystem/database/1_DDL/1_helpSystem_base_script.sql
 
-	b. /helpSystem/database/4_DML/1_hlp_Language_Insert_script.sql
+	b. /yii2-helpsystem/database/4_DML/1_hlp_Language_Insert_script.sql
 
 4.Finally add Help widget to your view template:
 
