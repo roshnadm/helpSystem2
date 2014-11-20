@@ -17,10 +17,9 @@ Quickstart
 	a.Using composer
               Run  
 ~~~php
-              	php composer.phar require --prefer-dist yiisoft/help-system2 "*"  
+              	php composer.phar require --prefer-dist yiisoft/help-system2 "*" 
 ~~~
-
-       b.Manual Installation
+	b.Manual Installation
          
 	 Download yii2-helpsystem  in application yii root folder.
           
