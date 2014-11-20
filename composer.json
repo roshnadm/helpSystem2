@@ -1,9 +1,9 @@
 {
-    "name": "yiisoft/help-system2",
+    "name": "yiisoft/help-system",
     "description": "Help System integration for the Yii framework",
     "keywords": ["yii2", "helpSystem"],
     "type": "yii2-extension",
-  
+    "minimum-stability": "stable",
     "support": {
         "forum": "http://www.yiiframework.com/forum/",
         "wiki": "http://www.yiiframework.com/wiki/",
