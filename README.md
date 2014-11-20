@@ -22,8 +22,9 @@ a. Using composer
 
 b. Manual Installation
 
-      Download yii2-helpsystem  in application yii root folder.
-      Add the module details in extensions.php 
+    Download yii2-helpsystem  in application yii root folder.
+    
+    Add the module details in extensions.php 
 ~~~php
 			'yiisoft/helpSystem' =>
 				array (
