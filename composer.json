@@ -21,7 +21,10 @@
     }, 
  "autoload": {
         "psr-4": {
-            "yii2-helpSystem\\": ""
+            "yii/helpSystem\\": "",
+ 	    "yii/helpSystem/admin\\": "" "/modules/admin",
+            "yii/helpSystem/client\\": "" "/modules/client",
+            "yii/helpSystem/dmeditor\\": "" "/vendor/dmeditor",
         }
 }
 }
