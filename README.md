@@ -16,7 +16,7 @@ Quickstart
 
 	a. Using composer
        
-       Run 	
+       Run 
 		php composer.phar require --prefer-dist yiisoft/help-system2 "*" 
 
 	b. Manual Installation
@@ -40,6 +40,7 @@ Quickstart
 				),
 			    
 ~~~
+
 2. Add module to your application config:
 
 ~~~php
