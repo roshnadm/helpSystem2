@@ -1,5 +1,5 @@
 {
-    "name": "yiisoft/help-system",
+    "name": "yiisoft/help-system2",
     "description": "Help System integration for the Yii framework",
     "keywords": ["yii2", "helpSystem"],
     "type": "yii2-extension",
@@ -18,5 +18,13 @@
     ],
     "require": {
         "yiisoft/yii2": "*"
-    }
+    },
+"alias" : {
+
+					"@yii/helpSystem"         : "/yiisoft/yii2-helpSystem",
+					"@yii/helpSystem/admin"   :  "/yiisoft/yii2-helpSystem/modules/admin",
+					"@yii/helpSystem/client"  : "/yiisoft/yii2-helpSystem/modules/client",
+					"@yii/helpSystem/dmeditor" : "/yiisoft/yii2-helpSystem/vendor/dmeditor",
+			
+}
 }
