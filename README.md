@@ -12,7 +12,7 @@ Requirements
 Quickstart
 ----------
 
-1. Installation 
+1>. Installation 
 
 	a. Using composer
        
@@ -41,7 +41,7 @@ Quickstart
 			    
 ~~~
 
-2. Add module to your application config:
+2>. Add module to your application config:
 
 ~~~php
 <?php
@@ -72,13 +72,13 @@ Quickstart
     // ...
 ~~~
 
-3. Run mysql script:
+3>. Run mysql script:
 
 	a. /helpSystem/database/1_DDL/1_helpSystem_base_script.sql
 
 	b. /helpSystem/database/4_DML/1_hlp_Language_Insert_script.sql
 
-4. Finally add Help widget to your view template:
+4>. Finally add Help widget to your view template:
 
 ~~~php
 
