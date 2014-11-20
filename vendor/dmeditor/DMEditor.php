@@ -50,14 +50,49 @@ class DMEditor extends InputWidget{
 
 	private function registerEditorJs($id,$options){
 
-		$this->getView()->registerJs(
-				
-		"$( document ).ready( function() {
+		$js = "$( document ).ready( function() {
 		    
-			$('#{$id}').ckeditor({$options}); 
-
-		   } );
-		");
+			$('#{$id}').ckeditor({$options}); ";
+		
+		// ckeditor not including csrf token in the image upload form
+		// force to inlude the csrf token input
+		if(Yii::$app->request->enableCsrfValidation){
+			$js .= " CKEDITOR.on('dialogDefinition', function (ev) {
+				var dialogName = ev.data.name;
+				var dialogDefinition = ev.data.definition;
+				var csrf_token = jQuery('meta[name=csrf-token]').attr('content'),
+				csrf_param = jQuery('meta[name=csrf-param]').attr('content')
+			
+			
+				if (dialogName === 'image') {
+					var uploadTab = dialogDefinition.getContents('Upload');
+			
+					for (var i = 0; i < uploadTab.elements.length; i++) {
+						var el = uploadTab.elements[i];
+			
+						if (el.type !== 'fileButton') {
+							continue;
+						}
+			
+						// add onClick for submit button to add inputs or rewrite the URL
+						var onClick = el.onclick;
+						el.onClick = function(evt) {
+							var dialog = this.getDialog();
+							var fb = dialog.getContentElement(this['for'][0], this['for'][1]);
+							var editor = dialog.getParentEditor();
+             			    editor._.filebrowserSe = this;
+							// if using jQuery
+							$(fb.getInputElement().getParent().$).append('<input type=\"hidden\" name=\"'+csrf_param+'\" value=\"'+csrf_token+'\"/>');
+							if (onClick && onClick.call(evt.sender, evt) === false) {
+								return false;
+							}
+						};
+					}
+				}
+			});";
+		}
+		$js .= " } );";
+		$this->getView()->registerJs($js);
 	}
 	
 	private function setOptions(){

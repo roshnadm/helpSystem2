@@ -6,26 +6,37 @@ Requirements
 ------------
 
 * Tested with Yii 2
-* ckeditor
+* ckeditor 4
 
 
 Quickstart
 ----------
-1.Add the module details in extensions.php 
 
-'yiisoft/helpSystem' =>
-	array (
-			'name' => 'yiisoft/yii2-helpSystem',
-			'version' => '2.0.0.0',
-			'alias' =>
-			 array (
-					'@yii/helpSystem'          => $vendorDir . '/yiisoft/yii2-helpSystem',
-					'@yii/helpSystem/admin'    => $vendorDir . '/yiisoft/yii2-helpSystem/modules/admin',
-					'@yii/helpSystem/client'   => $vendorDir . '/yiisoft/yii2-helpSystem/modules/client',
-					'@yii/helpSystem/dmeditor' => $vendorDir . '/yiisoft/yii2-helpSystem/vendor/dmeditor',
-			),
-	),
+1. Installation 
+	a. using composer
+              Run  
+              php composer.phar require --prefer-dist yiisoft/help-system2 "*"  
 
+         b. Manual Installation
+             Download yii2-helpsystem  in application yii root folder.
+          
+
+		Add the module details in extensions.php 
+		~~~php
+			'yiisoft/helpSystem' =>
+				array (
+						'name' => 'yiisoft/yii2-helpSystem',
+						'version' => '1.0.0.0',
+						'alias' =>
+						 array (
+							'@yii/helpSystem'          => $vendorDir . '/yiisoft/yii2-helpsystem',
+							'@yii/helpSystem/admin'    => $vendorDir . '/yiisoft/yii2-helpsystem/modules/admin',
+							'@yii/helpSystem/client'   => $vendorDir . '/yiisoft/yii2-helpsystem/modules/client',
+							'@yii/helpSystem/dmeditor' => $vendorDir . '/yiisoft/yii2-helpsystem/vendor/dmeditor',
+						),
+				),
+			    
+		~~~
 2.Add module to your application config:
 
 ~~~php
