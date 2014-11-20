@@ -1,0 +1,21 @@
+{
+    "name": "yiisoft/helpSystem2",
+    "description": "Help System integration for the Yii framework",
+    "keywords": ["yii2", "helpSystem"],
+    "type": "yii2-extension",
+  
+    "support": {
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "authors": [
+        {
+            "name": "digitalmesh",
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+    }
+}
