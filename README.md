@@ -16,14 +16,17 @@ Quickstart
 
 	a. using composer
               Run  
-              php composer.phar require --prefer-dist yiisoft/help-system2 "*"  
+~~~php
+              	php composer.phar require --prefer-dist yiisoft/help-system2 "*"  
+~~~
 
-         b. Manual Installation
-             Download yii2-helpsystem  in application yii root folder.
+       b. Manual Installation
+         
+	  Download yii2-helpsystem  in application yii root folder.
           
 
-		Add the module details in extensions.php 
-		~~~php
+	  Add the module details in extensions.php 
+~~~php
 			'yiisoft/helpSystem' =>
 				array (
 						'name' => 'yiisoft/yii2-helpSystem',
@@ -37,7 +40,7 @@ Quickstart
 						),
 				),
 			    
-		~~~
+~~~
 2. Add module to your application config:
 
 ~~~php
