@@ -12,12 +12,12 @@ Requirements
 Quickstart
 ----------
 
-1.  Installation 
+Installation 
 
 
 Using composer     
-Run 
-php composer.phar require --prefer-dist yiisoft/help-system2 "*" 
+	Run 
+		php composer.phar require --prefer-dist yiisoft/help-system2 "*" 
 
 Manual Installation
          
@@ -42,7 +42,7 @@ Manual Installation
 ~~~
 
 
-2.   Add module to your application config:
+Add module to your application config:
 
 ~~~php
 <?php
@@ -73,13 +73,13 @@ Manual Installation
     // ...
 ~~~
 
-3.   Run mysql script:
+Run mysql script:
 
 	a. /helpSystem/database/1_DDL/1_helpSystem_base_script.sql
 
 	b. /helpSystem/database/4_DML/1_hlp_Language_Insert_script.sql
 
-4.   Finally add Help widget to your view template:
+Finally add Help widget to your view template:
 
 ~~~php
 
